@@ -400,6 +400,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .modal-close:hover{color:var(--ink);border-color:rgba(237,233,223,.4)}
 .modal-media{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line-soft)}
 .modal-media img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.modal-media video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000}
 .modal-media .work-badge{top:12px;left:12px}
 .modal-body{padding-top:22px}
 .modal-body h3{
@@ -521,7 +522,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     <div class="sec-head rv">
       <p class="sec-eyebrow">精选作品</p>
       <h2 class="sec-title">AIGC <em>短片</em><span class="sec-en">AIGC SHORT FILMS</span></h2>
-      <p class="sec-sub">这里先放了 6 组版式示例（都标了「示例」），正式上线前会换成真实作品。</p>
+      <p class="sec-sub">6 部短片，点击卡片直接播放。</p>
     </div>
     <div class="works-filter rv" role="tablist" aria-label="作品分类">
       <button class="filter-btn active" data-cat="aigc" role="tab" aria-selected="true">AIGC 短片</button>
@@ -529,8 +530,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     <div class="works-grid rv" id="worksGrid">
 
       <article class="work" data-cat="aigc" data-work="0">
-        <button class="work-cover" data-open="0" aria-label="查看示例作品《夜航》">
-          <img src="work-nightsailing.jpg" alt="《夜航》示例海报" loading="lazy">
+        <button class="work-cover" data-open="0" aria-label="播放《骑士之誓》">
+          <img src="骑士之誓.jpg" alt="《骑士之誓》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM0" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -544,19 +545,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM0);mask:url(#inkM0)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>夜航 <span>NIGHT SAILING</span></h3>
-          <p class="work-line">2026 · AI 剧情短片</p>
-          <p class="work-roles">编导 · AIGC 创作</p>
+          <h3>骑士之誓 <span>KNIGHT'S OATH</span></h3>
+          <p class="work-line">AI 短片 · 30 秒</p>
         </div>
       </article>
 
       <article class="work" data-cat="aigc" data-work="1">
-        <button class="work-cover" data-open="1" aria-label="查看示例作品《春分》">
-          <img src="work-spring.jpg" alt="《春分》示例海报" loading="lazy">
+        <button class="work-cover" data-open="1" aria-label="播放《去南方》">
+          <img src="去南方.jpg" alt="《去南方》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM1" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -570,19 +570,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM1);mask:url(#inkM1)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>春分 <span>EQUINOX</span></h3>
-          <p class="work-line">2026 · AI 概念短片</p>
-          <p class="work-roles">剪辑 · 调色</p>
+          <h3>去南方 <span>GOING SOUTH</span></h3>
+          <p class="work-line">剧情短片 · 3 分 45 秒</p>
         </div>
       </article>
 
       <article class="work" data-cat="aigc" data-work="2">
-        <button class="work-cover" data-open="2" aria-label="查看示例作品《缓存》">
-          <img src="work-cache.jpg" alt="《缓存》示例海报" loading="lazy">
+        <button class="work-cover" data-open="2" aria-label="播放《未爆弹》">
+          <img src="未爆弹.jpg" alt="《未爆弹》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM2" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -596,19 +595,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM2);mask:url(#inkM2)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>缓存 <span>CACHE</span></h3>
-          <p class="work-line">2026 · AI 科幻短片</p>
-          <p class="work-roles">AIGC 创作 · 剪辑</p>
+          <h3>未爆弹 <span>UNEXPLODED</span></h3>
+          <p class="work-line">1001 页系列短片 · 3 分 49 秒</p>
         </div>
       </article>
 
       <article class="work" data-cat="aigc" data-work="3">
-        <button class="work-cover" data-open="3" aria-label="查看示例作品《旧物》">
-          <img src="work-oldthings.jpg" alt="《旧物》示例海报" loading="lazy">
+        <button class="work-cover" data-open="3" aria-label="播放《优素福干不干》">
+          <img src="优素福干不干.jpg" alt="《优素福干不干》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM3" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -622,19 +620,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM3);mask:url(#inkM3)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>旧物 <span>THINGS LEFT BEHIND</span></h3>
-          <p class="work-line">2026 · AI 纪实短片</p>
-          <p class="work-roles">摄影指导 · 调色</p>
+          <h3>优素福干不干 <span>YUSUF OR NOT</span></h3>
+          <p class="work-line">1001 页系列短片 · 3 分 28 秒</p>
         </div>
       </article>
 
       <article class="work" data-cat="aigc" data-work="4">
-        <button class="work-cover" data-open="4" aria-label="查看示例作品《雪线》">
-          <img src="work-snowline.jpg" alt="《雪线》示例海报" loading="lazy">
+        <button class="work-cover" data-open="4" aria-label="播放《入埃及记》">
+          <img src="入埃及记.jpg" alt="《入埃及记》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM4" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -648,19 +645,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM4);mask:url(#inkM4)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>雪线 <span>SNOWLINE</span></h3>
-          <p class="work-line">2026 · AI 节日短片</p>
-          <p class="work-roles">编导 · AIGC 创作</p>
+          <h3>入埃及记 <span>EXODUS</span></h3>
+          <p class="work-line">1001 页系列短片 · 4 分 44 秒</p>
         </div>
       </article>
 
       <article class="work" data-cat="aigc" data-work="5">
-        <button class="work-cover" data-open="5" aria-label="查看示例作品《回声》">
-          <img src="work-echo.jpg" alt="《回声》示例海报" loading="lazy">
+        <button class="work-cover" data-open="5" aria-label="播放《实习生》">
+          <img src="实习生.jpg" alt="《实习生》封面" loading="lazy">
           <svg class="ink-defs" aria-hidden="true" viewBox="0 0 1 1" preserveAspectRatio="none">
             <defs>
               <mask id="inkM5" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
@@ -674,13 +670,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
             </defs>
           </svg>
           <span class="ink-layer" aria-hidden="true" style="-webkit-mask:url(#inkM5);mask:url(#inkM5)"></span>
-          <span class="work-badge">示例</span>
+          <span class="work-badge">短片</span>
           <span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="rgba(13,13,15,.55)"/><path d="M9.5 8l7 4-7 4z" fill="#EDE9DF"/></svg></span>
         </button>
         <div class="work-meta">
-          <h3>回声 <span>ECHO</span></h3>
-          <p class="work-line">2026 · AI 声音短片</p>
-          <p class="work-roles">剪辑 · 声音设计</p>
+          <h3>实习生 <span>THE INTERN</span></h3>
+          <p class="work-line">1001 页系列短片 · 2 分 45 秒</p>
         </div>
       </article>
 
@@ -856,15 +851,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   <div class="modal-backdrop" data-close></div>
   <div class="modal-panel">
     <button class="modal-close" data-close aria-label="关闭">×</button>
-    <div class="modal-media" id="modalMedia">
-      <span class="work-badge">示例</span>
-    </div>
+    <div class="modal-media" id="modalMedia"></div>
     <div class="modal-body">
-      <h3 id="modalTitle">夜航 <span>NIGHT SAILING</span></h3>
-      <p class="modal-line" id="modalLine">2026 · AI 剧情短片</p>
+      <h3 id="modalTitle">骑士之誓 <span>KNIGHT'S OATH</span></h3>
+      <p class="modal-line" id="modalLine">AI 短片 · 30 秒</p>
       <div class="modal-roles" id="modalRoles"></div>
       <p class="modal-desc" id="modalDesc"></p>
-      <p class="modal-note">示例作品：先放版式占位，正式上线前会换成真实作品。</p>
+      <p class="modal-note">点击播放完整短片，建议在 WiFi 环境下观看。</p>
     </div>
   </div>
 </div>
@@ -874,12 +867,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 <script>
 /* ===== 作品数据 ===== */
 var WORKS = [
-  {title:"夜航", en:"NIGHT SAILING", line:"2026 · AI 剧情短片", roles:["编导","AIGC 创作"], desc:"AI 剧情短片。深夜海面、灯光与浪声由 AI 生成，负责编导与后期剪辑。"},
-  {title:"春分", en:"EQUINOX", line:"2026 · AI 概念短片", roles:["剪辑","调色"], desc:"品牌节气概念短片，AI 生成画面，负责剪辑与调色。"},
-  {title:"缓存", en:"CACHE", line:"2026 · AI 科幻短片", roles:["AIGC 创作","剪辑"], desc:"AI 科幻短片。雨夜、霓虹与数据网格场景由 AI 生成，负责编导与后期剪辑。"},
-  {title:"旧物", en:"THINGS LEFT BEHIND", line:"2026 · AI 纪实短片", roles:["摄影指导","调色"], desc:"AI 纪实短片。旧物与暖光构成的纪实影像，负责摄影指导与调色。"},
-  {title:"雪线", en:"SNOWLINE", line:"2026 · AI 节日短片", roles:["编导","AIGC 创作"], desc:"AI 节日短片。雪原与红色视觉元素由 AI 生成，负责编导与画面生成。"},
-  {title:"回声", en:"ECHO", line:"2026 · AI 声音短片", roles:["剪辑","声音设计"], desc:"AI 声音概念短片。录音棚回声的视觉化呈现，负责剪辑与声音设计。"}
+  {title:"骑士之誓", en:"KNIGHT'S OATH", line:"AI 短片 · 30 秒", roles:[], video:"works-videos/骑士之誓.mp4", desc:"30 秒 AI 短片。"},
+  {title:"去南方", en:"GOING SOUTH", line:"剧情短片 · 3 分 45 秒", roles:[], video:"works-videos/去南方.mp4", desc:"剧情短片。"},
+  {title:"未爆弹", en:"UNEXPLODED", line:"1001 页系列短片 · 3 分 49 秒", roles:[], video:"works-videos/未爆弹.mp4", desc:"1001 页系列短片之一。"},
+  {title:"优素福干不干", en:"YUSUF OR NOT", line:"1001 页系列短片 · 3 分 28 秒", roles:[], video:"works-videos/优素福干不干.mp4", desc:"1001 页系列短片之一。"},
+  {title:"入埃及记", en:"EXODUS", line:"1001 页系列短片 · 4 分 44 秒", roles:[], video:"works-videos/入埃及记.mp4", desc:"1001 页系列短片之一。"},
+  {title:"实习生", en:"THE INTERN", line:"1001 页系列短片 · 2 分 45 秒", roles:[], video:"works-videos/实习生.mp4", desc:"1001 页系列短片之一。"}
 ];
 
 /* ===== 滚动显现 ===== */
@@ -960,13 +953,14 @@ function openModal(i){
   var w = WORKS[i];
   if (!w) return;
   var coverImg = document.querySelector('.work[data-work="' + i + '"] .work-cover img');
-  modalMedia.querySelectorAll('img').forEach(function(im){ im.remove(); });
-  if (coverImg) {
-    var clone = coverImg.cloneNode(false);
-    clone.removeAttribute('loading');
-    clone.alt = '《' + w.title + '》示例海报';
-    modalMedia.insertBefore(clone, modalMedia.firstChild);
-  }
+  modalMedia.querySelectorAll('img, video').forEach(function(n){ n.remove(); });
+  var v = document.createElement('video');
+  v.controls = true; v.playsInline = true; v.preload = 'metadata';
+  if (coverImg) v.poster = coverImg.getAttribute('src');
+  var s = document.createElement('source');
+  s.src = w.video; s.type = 'video/mp4';
+  v.appendChild(s);
+  modalMedia.insertBefore(v, modalMedia.firstChild);
   modalTitle.innerHTML = w.title + ' <span>' + w.en + '</span>';
   modalLine.textContent = w.line;
   modalRoles.innerHTML = w.roles.map(function(r){ return '<span class="chip">' + r + '</span>'; }).join('');
@@ -975,8 +969,11 @@ function openModal(i){
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
   modal.querySelector('.modal-close').focus();
+  var p = v.play();
+  if (p) p.catch(function(){});
 }
 function closeModal(){
+  modalMedia.querySelectorAll('video').forEach(function(v){ v.pause(); });
   modal.classList.remove('open');
   document.body.style.overflow = '';
   if (lastFocus) lastFocus.focus();
